@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A.J.A للخدمات البرمجية والمصغرة</title>
+    <style>
+        :root {
+            --khamsat-green: #2ecc71;
+            --dark-blue: #2c3e50;
+            --bg-color: #f4f6f9;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, sans-serif; }
+        body { background-color: var(--bg-color); color: #333; }
+        
+        header { background: #fff; padding: 15px 20px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 100; }
+        .logo { font-size: 26px; font-weight: bold; color: var(--khamsat-green); }
+        .btn-whatsapp { background: var(--khamsat-green); color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: bold; transition: 0.3s; }
+        .btn-whatsapp:hover { background: #27ae60; }
+
+        .hero { background: linear-gradient(135deg, var(--dark-blue), #34495e); color: white; text-align: center; padding: 50px 20px; }
+        .hero h1 { font-size: 32px; margin-bottom: 10px; }
+        
+        .container { max-width: 1100px; margin: 40px auto; padding: 0 20px; }
+        .title { text-align: center; margin-bottom: 30px; font-size: 28px; color: var(--dark-blue); }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; }
+        .card { background: white; padding: 25px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); text-align: center; transition: 0.3s; }
+        .card:hover { transform: translateY(-5px); }
+        .card .icon { font-size: 45px; margin-bottom: 15px; display: block; }
+        .card h3 { font-size: 20px; margin-bottom: 10px; color: var(--dark-blue); }
+        .card p { color: #666; font-size: 15px; margin-bottom: 20px; line-height: 1.6; }
+
+        [contenteditable="true"] { border: 2px dashed var(--khamsat-green) !important; background: #fff9c4 !important; padding: 3px; border-radius: 4px; }
+        
+        footer { background: var(--dark-blue); color: white; text-align: center; padding: 25px; margin-top: 50px; }
+        .admin-btn { background: none; border: 1px solid #7f8c8d; color: #95a5a6; padding: 5px 10px; border-radius: 4px; cursor: pointer; margin-top: 10px; font-size: 12px; }
+        .admin-btn:hover { color: white; border-color: white; }
+        .save-btn { background: #e74c3c; color: white; padding: 10px 20px; border: none; border-radius: 5px; font-size: 16px; font-weight: bold; cursor: pointer; margin-top: 15px; display: none; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">A.J.A</div>
+        <a href="https://wa.me/201002241571" target="_blank" class="btn-whatsapp">تواصل معي واتساب 💬</a>
+    </header>
+
+    <section class="hero">
+        <h1 id="main-title">منصة A.J.A للخدمات البرمجية والرقمية</h1>
+        <p id="main-sub">كل ما تحتاجه لتطوير أعمالك في مكان واحد بجودة احترافية</p>
+    </section>
+
+    <div class="container">
+        <h2 class="title">الخدمات المتاحة</h2>
+        <div class="grid" id="services-area">
+            
+            <div class="card">
+                <span class="icon">💻</span>
+                <h3>تصميم وبرمجة المواقع</h3>
+                <p>إنشاء مواقع ويب متكاملة، سريعة، ومتجاوبة بالكامل مع الموبايل والكمبيوتر بأحدث التقنيات.</p>
+                <a href="https://wa.me/201002241571?text=أريد%20طلب%20خدمة%20تصميم%20الموقع" target="_blank" class="btn-whatsapp">اطلب الخدمة</a>
+            </div>
+
+            <div class="card">
+                <span class="icon">📝</span>
+                <h3>كتابة المقالات والمحتوى</h3>
+                <p>كتابة مقالات حصرية واحترافية متوافقة مع قواعد السيو (SEO) لضمان تصدر محركات البحث.</p>
+                <a href="https://wa.me/201002241571?text=أريد%20طلب%20خدمة%20كتابة%20المقالات" target="_blank" class="btn-whatsapp">اطلب الخدمة</a>
+            </div>
+
+            <div class="card">
+                <span class="icon">📚</span>
+                <h3>عمل الأبحاث العلمية</h3>
+                <p>إعداد بحوث علمية وأكاديمية دقيقة لجميع المراحل الدراسية مع توثيق كامل للمصادر والمراجع.</p>
+                <a href="https://wa.me/201002241571?text=أريد%20طلب%20خدمة%20عمل%20الأبحاث" target="_blank" class="btn-whatsapp">اطلب الخدمة</a>
+            </div>
+
+            <div class="card">
+                <span class="icon">🌐</span>
+                <h3>الترجمة الاحترافية</h3>
+                <p>ترجمة احترافية وبشرية خالية من الأخطاء من اللغة الإنجليزية إلى العربية والعكس بدقة عالية.</p>
+                <a href="https://wa.me/201002241571?text=أريد%20طلب%20خدمة%20الترجمة" target="_blank" class="btn-whatsapp">اطلب الخدمة</a>
+            </div>
+
+            <div class="card">
+                <span class="icon">⚙️</span>
+                <h3>كل ما يخص البرمجة</h3>
+                <p>حل مشكلات الأكواد، بناء سكربتات خاصة، وتطوير برمجيات مخصصة حسب طلبك بدقة متناهية.</p>
+                <a href="https://wa.me/201002241571?text=أريد%20طلب%20استشارة%20أو%20خدمة%20برمجية" target="_blank" class="btn-whatsapp">اطلب الخدمة</a>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>جميع الحقوق محفوظة © 2026 لمنصة A.J.A</p>
+        <button class="admin-btn" onclick="startAdminMode()">لوحة تحكم الموقع ⚙️</button>
+        <br>
+        <button id="save-btn" class="save-btn" onclick="saveNewData()">حفظ التعديلات الجديدة الحالية</button>
+    </footer>
+
+    <script>
+        window.onload = function() {
+            if(localStorage.getItem('aja_grid')) document.getElementById('services-area').innerHTML = localStorage.getItem('aja_grid');
+            if(localStorage.getItem('aja_title')) document.getElementById('main-title').innerText = localStorage.getItem('aja_title');
+            if(localStorage.getItem('aja_sub')) document.getElementById('main-sub').innerText = localStorage.getItem('aja_sub');
+        }
+
+        function startAdminMode() {
+            let pass = prompt("الرجاء إدخال كلمة مرور الإدارة للتعديل:");
+            if(pass === "255800A.J.A") {
+                alert("الباسورد صح! اضغط على أي نص في الموقع لتعديله ومسحه واكتب اللي تحبه.");
+                document.getElementById('main-title').contentEditable = true;
+                document.getElementById('main-sub').contentEditable = true;
+                let cards = document.querySelectorAll('.card h3, .card p');
+                cards.forEach(item => item.contentEditable = true);
+                document.getElementById('save-btn').style.display = "inline-block";
+            } else if (pass !== null) {
+                alert("الباسورد غلط! ركز واكتبه صح.");
+            }
+        }
+
+        function saveNewData() {
+            document.getElementById('main-title').contentEditable = false;
+            document.getElementById('main-sub').contentEditable = false;
+            let cards = document.querySelectorAll('.card h3, .card p');
+            cards.forEach(item => item.contentEditable = false);
+
+            localStorage.setItem('aja_grid', document.getElementById('services-area').innerHTML);
+            localStorage.setItem('aja_title', document.getElementById('main-title').innerText);
+            localStorage.setItem('aja_sub', document.getElementById('main-sub').innerText);
+
+            alert("تم حفظ التعديلات بنجاح!");
+            document.getElementById('save-btn').style.display = "none";
+        }
+    </script>
+</body>-
+</html>
